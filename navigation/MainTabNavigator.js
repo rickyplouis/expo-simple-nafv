@@ -7,10 +7,12 @@ import HomeScreen from '../screens/HomeScreen';
 import SecondScreen from '../screens/SecondScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import AnotherScreen from '../screens/AnotherScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
-  SecondScreen: SecondScreen
+  Second: SecondScreen,
+  Another: AnotherScreen,
 });
 
 HomeStack.navigationOptions = {

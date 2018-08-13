@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "testing",
+    "name": "expo-simple-nav",
     "description": "A very interesting project.",
-    "slug": "testing",
+    "slug": "expo-simple-nav",
     "privacy": "public",
     "sdkVersion": "29.0.0",
     "platforms": ["ios", "android"],

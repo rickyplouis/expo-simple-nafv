@@ -17,9 +17,7 @@ export default class LinksScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Button title="Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'Second')}>
-          Go To Second Screen
-        </Button>
+        <Button title="Go To Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'Second')} />
       </ScrollView>
     );
   }
