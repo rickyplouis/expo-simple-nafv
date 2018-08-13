@@ -17,11 +17,11 @@ export default class LinksScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Button title="Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'HomeScreen')}>
+        <Button title="Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'Home')}>
           Go To Home
         </Button>
-        <Button title="Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'SecondScreen')}>
-          Go To Third Screen
+        <Button title="Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'Another')}>
+          Go To Another Screen
         </Button>
       </ScrollView>
     );

@@ -1,35 +1,26 @@
 import React from 'react';
-import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  Button
-} from 'react-native';
-import { WebBrowser } from 'expo';
+import { ScrollView, StyleSheet, Text, Button } from 'react-native';
+import { ExpoLinksView } from '@expo/samples';
 
-import { MonoText } from '../components/StyledText';
-
-export default class HomeScreen extends React.Component {
+export default class LinksScreen extends React.Component {
   static navigationOptions = {
-    title: 'Home',
+    title: 'Another Screen',
   };
+
 
   routeToScreen(evt, screen){
     evt.preventDefault()
     this.props.navigation.navigate(screen)
   }
 
+
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <Button title="Second Screen" style={{paddingTop: 10}} onPress={(evt) => this.routeToScreen(evt, 'Second')}>
           Go To Second Screen
         </Button>
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -37,6 +28,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 15,
     backgroundColor: '#fff',
   },
 });
